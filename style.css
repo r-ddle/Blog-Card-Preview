@@ -1,74 +1,90 @@
-:root{
-    --mainText: hsl(0, 0%, 7%);
-    --para: hsl(0, 0%, 50%);
-    --bg: hsl(47, 88%, 63%);
-    --cardBg: hsl(0, 0%, 100%);
+:root {
+  --mainText: hsl(0, 0%, 7%);
+  --para: hsl(0, 0%, 50%);
+  --bg: hsl(47, 88%, 63%);
+  --cardBg: hsl(0, 0%, 100%);
 }
 
-html{
-    font-family: 'Figtree';
-    background: var(--bg);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1,h2,h3{
-    color: var(--mainText);
+html {
+  font-family: "Figtree";
+  background: var(--bg);
 }
 
-h1,h2,h3,p{
-    margin-left: 25px;
+h1,
+h2,
+h3 {
+  color: var(--mainText);
 }
 
-h1{
-    font-weight: 800;
+h1 {
+  font-weight: 800;
+  margin-bottom: 5px;
 }
 
-h3{
-    font-weight: 600;
+h3 {
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
-p{
-    color: var(--para);
-    font-weight: 600;
+p {
+  color: var(--para);
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--cardBg);
-    box-shadow: 8px 8px 0px 0px #000;
-    border: 2px solid black;
-    border-radius: 5%;
-    width: 500px;
-    height: 70vh;
-    margin-top: 80px;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
-    padding: 10px;
-    text-align: left;
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--cardBg);
+  padding: 20px;
+  border-radius: 25px;
+  border: 1.5px solid black;
+  box-shadow: 8px 8px 0 black;
+  width: fit-content;
 }
 
-.card .illu-image{
-    border-radius: 1.3rem;
-    width: 450px;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
-    margin-top: 20px;
+.card-container { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
 }
 
-.avatar{
-    margin-left: 25px;
+.box {
+  background: var(--bg);
+  width: fit-content;
+  padding: 6px;
+  border-radius: 6px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
-.grid{
-    display: flex;
+.illu-image {
+  border-radius: 10px;
+  width: 100%;
 }
 
-.box{
-    background: var(--bg);
-    margin-top: 15px;
-    width: fit-content;
-    border-radius: 0.7rem;
+.grid {
+  display: flex;
 }
 
+.grid h3 {
+  margin-top: 20px;
+  margin-left: 15px;
+  font-weight: 800;
+}
+
+.grid img {
+  margin-top: 10px;
+  height: 45px;
+}
 
 /* box-shadow: 8px 8px 0px 0px #000;  */
